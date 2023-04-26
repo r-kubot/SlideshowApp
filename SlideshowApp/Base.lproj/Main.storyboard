@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="suA-Xy-mVJ">
-                                <rect key="frame" x="93.666666666666686" y="459" width="206" height="34.333333333333314"/>
+                                <rect key="frame" x="45" y="459" width="303" height="34.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mex-6i-PGF">
-                                        <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="戻る"/>
                                         <connections>
@@ -28,7 +28,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLk-Vz-KJm">
-                                        <rect key="frame" x="73.666666666666671" y="0.0" width="58.666666666666671" height="34.333333333333336"/>
+                                        <rect key="frame" x="106" y="0.0" width="91" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="再生"/>
                                         <connections>
@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrF-1P-ILy">
-                                        <rect key="frame" x="147.33333333333331" y="0.0" width="58.666666666666657" height="34.333333333333336"/>
+                                        <rect key="frame" x="212" y="0.0" width="91" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="進む"/>
                                         <connections>
@@ -44,6 +44,9 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="rrF-1P-ILy" firstAttribute="leading" secondItem="dLk-Vz-KJm" secondAttribute="trailing" constant="10" id="IZC-lA-1GB"/>
+                                </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="xRM-rc-M5g">
                                 <rect key="frame" x="46" y="159" width="298" height="200"/>
@@ -60,10 +63,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="suA-Xy-mVJ" firstAttribute="top" secondItem="xRM-rc-M5g" secondAttribute="bottom" constant="100" id="8U1-zk-qd1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="suA-Xy-mVJ" secondAttribute="trailing" constant="93.333333333333314" id="Wyj-VF-zVB"/>
                             <constraint firstItem="xRM-rc-M5g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dKX-oH-EhO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xRM-rc-M5g" secondAttribute="trailing" constant="49" id="gav-Gd-ki9"/>
-                            <constraint firstItem="suA-Xy-mVJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93.666666666666686" id="mni-Zs-B0E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="suA-Xy-mVJ" secondAttribute="trailing" constant="45" id="kgp-TG-ioY"/>
+                            <constraint firstItem="suA-Xy-mVJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="lqd-yT-12M"/>
                             <constraint firstItem="xRM-rc-M5g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="tKk-ap-aTa"/>
                         </constraints>
                     </view>
